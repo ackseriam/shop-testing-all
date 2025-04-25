@@ -1,0 +1,33 @@
+<div class="custom-section color-{{ section.settings.color_scheme }}">
+  {% content_for 'blocks' %} /* para renderizar los blockes */
+</div>
+
+
+{% schema %}
+{
+  "name": "Custom section",
+  //Esto es un ejemplo de como se llaman los bloques tematicos y privados que tienen _ en su nombre de archivo
+  //https://shopify.dev/docs/storefronts/themes/architecture/blocks/theme-blocks/quick-start?framework=liquid
+  "blocks": [{ "type": "_slide" }], 
+  "settings": [ 
+    {
+      "type": "header",
+      "content": "Color"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom section"
+    },
+    {
+      "name": "Heading and text"
+    }
+  ]
+}
+{% endschema %}
