@@ -1,0 +1,26 @@
+MatchingTranslations:
+  enabled: false
+TemplateLength:
+  enabled: false
+DeprecateLazysizes:
+  enabled: true
+ImgLazyLoading:
+  enabled: true
+DeprecatedFilter:
+  enabled: true
+ImgWidthAndHeight:
+  enabled: true
+LiquidHTMLSyntaxError:
+  enabled: true
+HtmlParsingError:
+  enabled: true
+UnusedAssign:
+  enabled: true
+UnknownFilter:
+  enabled: true
+UndefinedObject:
+  enabled: true
+MissingTemplate:
+  enabled: true
+RemoteAsset:
+  enabled: false
