@@ -1,0 +1,47 @@
+{% stylesheet %}
+    .text-left {
+      text-align: left;
+    }
+  
+    .text-center {
+      text-align: center;
+    }
+  
+    .text-right {
+      text-align: right;
+    }
+  {% endstylesheet %}
+  
+  <div class="text-block text-{{ block.settings.alignment }}">
+
+    {{ block.settings.image | img_tag: 'image alt text', '', '450x450' }}
+  </div>
+  
+  {% schema %}
+  {
+    "name": "Slide",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text_alignment",
+        "id": "alignment",
+        "label": "Alignment"
+      }
+    ],
+    "presets": [
+      { "name": "Slide" },
+      {
+        "name": "Content",
+        "settings": {
+          "image": "",
+          "alignment": "left"
+        }
+      }
+    ]
+  }
+  {% endschema %}
+  

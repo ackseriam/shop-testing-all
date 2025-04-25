@@ -1,0 +1,60 @@
+{% comment %} Example using article_img_url filter {% endcomment %}
+{{ article.image | article_img_url }}
+
+{% comment %} Example using collection_img_url filter {% endcomment %}
+{{ collection.image | collection_img_url }}
+
+{% comment %} Example using external_video_tag filter {% endcomment %}
+{% for media in product.media %}
+  {% if media.media_type == 'external_video' %}
+    {% if media.host == 'youtube' %}
+      {{ media | external_video_url: color: 'white' | external_video_tag }}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% comment %} Example using image_tag filter {% endcomment %}
+{{ product | image_url: width: 200 | image_tag }}
+
+{% comment %} Example using image_url filter {% endcomment %}
+{{ product | image_url: width: 450 }}
+
+{% comment %} Example using img_tag filter {% endcomment %}
+{{ product | img_tag }}
+{% comment %} 
+image_tag: 
+
+image_tagy puntos focales
+
+Este filtro aplica automáticamente un punto focal a la imagen mediante el object-positionestilo CSS, si dispone de las coordenadas del punto focal. También puede acceder a las coordenadas del punto focal de una imagen directamente a través del objeto. Aprenda a establecer un punto focal .focal_point
+{% endcomment %}
+{{ block.settings.image | image_url: width: 300 | image_tag }}
+
+<!-- With a width -->
+{{ product | image_url: width: 400 | image_tag: width: 300 }}
+
+<!-- With the width set to nil -->
+{{ product | image_url: width: 400 | image_tag: width: nil }}
+
+{% schema %}
+  {
+    "name": "Medios",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }
+    ],
+    "presets": [
+      { "name": "Medios" },
+      {
+        "name": "Content",
+        "settings": {
+          "image": ""
+        }
+      }
+    ]
+  }
+  {% endschema %}
+  
