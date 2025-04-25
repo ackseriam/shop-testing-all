@@ -1,0 +1,35 @@
+# Name of the workflow that will appear in GitHub Actions
+name: Theme Check
+
+# Define when this workflow will run
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '**/*.liquid'      # Liquid template files
+      - '**/*.js'          # JavaScript files
+      - '**/*.css'         # CSS files
+      - '**/*.scss'        # SASS/SCSS files
+      - 'templates/**/*'   # Any file in templates folder
+      - 'sections/**/*'    # Any file in sections folder
+      - 'snippets/**/*'    # Any file in snippets folder
+      - 'layout/**/*'      # Any file in layout folder
+      - 'assets/**/*'      # Any file in assets folder
+
+# Define the jobs to run
+jobs:
+  theme-check:
+    name: Theme Check
+    runs-on: ubuntu-latest
+    steps:
+    # Step 1: Get the repository code
+    - uses: actions/checkout@v4
+    
+    # Step 2: Theme Check
+    - name: Theme Check
+      uses: shopify/theme-check-action@v2
+      with:
+        # GitHub token for authentication
+        token: ${{ secrets.GITHUB_TOKEN }}
+        theme_root: .
