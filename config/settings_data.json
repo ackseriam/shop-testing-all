@@ -142,8 +142,8 @@
     },
     "content_for_index": [],
     "blocks": {
-      "17592179491848987890": {
-        "type": "shopify://apps/chat-store-agent/blocks/chat-interface/931da84f-0150-431e-ba6e-0b732289effe",
+      "8972375497258538973": {
+        "type": "shopify://apps/store-chat-ia/blocks/chat-interface/a58ec01f-66d0-4155-b2fb-f5a74d389f90",
         "disabled": false,
         "settings": {
           "chat_bubble_color": "#8ec1c9",
