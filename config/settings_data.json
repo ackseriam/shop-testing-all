@@ -142,12 +142,12 @@
     },
     "content_for_index": [],
     "blocks": {
-      "8972375497258538973": {
-        "type": "shopify://apps/store-chat-ia/blocks/chat-interface/a58ec01f-66d0-4155-b2fb-f5a74d389f90",
+      "729724967255482704": {
+        "type": "shopify://apps/shop-agent-images-store/blocks/chat-interface/e3746513-a770-4263-a145-82cc3906a55b",
         "disabled": false,
         "settings": {
-          "chat_bubble_color": "#8ec1c9",
-          "welcome_message": "👋 Hola , te podemos ayudar con tu compra?",
+          "chat_bubble_color": "#5046e4",
+          "welcome_message": "👋 Hi there! How can I help you today?",
           "system_prompt": "standardAssistant"
         }
       }
