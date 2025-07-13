@@ -142,18 +142,9 @@
     },
     "content_for_index": [],
     "blocks": {
-      "2892102808565853668": {
-        "type": "shopify://apps/shop-agentia-image/blocks/chat-interface/4f63e8e9-a5f0-473c-8f93-a948f7b06396",
+      "4088971183458447674": {
+        "type": "shopify://apps/shop-agenia-images/blocks/chat-interface/885e3bd7-f25a-4716-8c0c-ab458db4aeb6",
         "disabled": false,
-        "settings": {
-          "chat_bubble_color": "#5046e4",
-          "welcome_message": "👋 Hi there! How can I help you today?",
-          "system_prompt": "standardAssistant"
-        }
-      },
-      "729724967255482704": {
-        "type": "shopify://apps/shop-agent-images-store/blocks/chat-interface/e3746513-a770-4263-a145-82cc3906a55b",
-        "disabled": true,
         "settings": {
           "chat_bubble_color": "#5046e4",
           "welcome_message": "👋 Hi there! How can I help you today?",
