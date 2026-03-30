@@ -61,6 +61,10 @@
             "addedContainerStyles": ""
           }
         },
+        "wishlist_plus_advanced_pdp_button_KizGjN": {
+          "type": "shopify://apps/wishlist-plus/blocks/advanced-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+          "settings": {}
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -80,6 +84,7 @@
         "quantity_selector",
         "buy_buttons",
         "wishlist_hero_custom_product_button_eg3zGx",
+        "wishlist_plus_advanced_pdp_button_KizGjN",
         "description",
         "share"
       ],
