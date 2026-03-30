@@ -12,6 +12,21 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "wishlist_hero_header_icon_UwE33w": {
+          "type": "shopify://apps/wishlist-hero/blocks/header-icon/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
+          "settings": {
+            "customThemeName": "~",
+            "useCustomHeaderColor": false,
+            "customHeaderColor": "",
+            "useCustomHeaderSize": false,
+            "customHeaderIconSize": 22,
+            "additionalIconCssClassNames": "",
+            "additionalIconStyle": "",
+            "additionalContainerClasses": "",
+            "additionalContainerStyle": "",
+            "replaceExistingClasses": false
+          }
+        },
         "vendor": {
           "type": "text",
           "settings": {
@@ -77,6 +92,7 @@
         }
       },
       "block_order": [
+        "wishlist_hero_header_icon_UwE33w",
         "vendor",
         "title",
         "price",
