@@ -142,13 +142,12 @@
     },
     "content_for_index": [],
     "blocks": {
-      "4088971183458447674": {
-        "type": "shopify://apps/shop-agenia-images/blocks/chat-interface/885e3bd7-f25a-4716-8c0c-ab458db4aeb6",
+      "7870687481494312845": {
+        "type": "shopify://apps/wishlist-hero/blocks/app-embed/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
         "disabled": false,
         "settings": {
-          "chat_bubble_color": "#5046e4",
-          "welcome_message": "👋 Hi there! How can I help you today?",
-          "system_prompt": "standardAssistant"
+          "additionalWLButtonCssClasses": "",
+          "additionalWLCartBubbleCssClasses": ""
         }
       }
     },
