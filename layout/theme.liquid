@@ -9,10 +9,7 @@
     <script defer type="text/javascript" src="https://snapui.searchspring.io/1k5kzd/bundle.js"></script>
 
     <script id="searchspring" defer type="text/javascript" src="https://cdn.searchspring.net/intellisuggest/is.min.js"
-    dangerouslySetInnerHTML={{
-      __html: `
-      collection = {
-        handle: '{{ collection.handle }}',
+    dangerouslySetInnerHTML={{ __html }}',
         collections: [{ name: '{{ collection.name }}', handle: '{{ collection.handle }}' }]
       }`
   }}></script>
@@ -383,3 +380,17 @@
     {%- endif -%}
   </body>
 </html>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {{
+          __html: `
+          collection = {
+            handle: '{{ collection.handle }}
+  to: "{{ __html }}"
+  position: 585..597
+{% endcomment %}
